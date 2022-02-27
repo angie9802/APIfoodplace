@@ -1,0 +1,178 @@
+@import url("header-footer.css");
+body{
+    background-image: url(../img/fast-food-1.jpg);
+    background-size: cover;
+    padding-top: 8px;
+  }
+
+main {
+    width: 100%;
+    height: 82%;
+    padding: 20px 
+}
+main h1, h3{
+    color: black;
+    
+}
+main .container {
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    background-color : rgba(255, 255, 255, 0.9);
+    margin: auto;
+    display : flex;
+  justify-content: center;
+  overflow-y:scroll;
+  
+}
+main .container::-webkit-scrollbar{
+    width: 0px;
+ }
+ main .container::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    border: 1.5px solid  transparent;
+    background-color: #FFFFFF; ;
+ }
+
+ 
+main .int-1 {
+    width: 100%;
+    padding: 20px;
+    
+}
+main .int-2{
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    border-left: 1.5px solid  transparent;
+}
+main .box{
+    margin: 0px 10px 10px;
+}
+
+main .int-1 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 0 auto;
+    display:block
+}
+
+
+
+
+main .container-form{
+    border: 1px solid rgba(59, 59, 59, 0.733);
+    padding: 10px 20px;
+    background-color : #ffffffc0;
+    position: relative;
+    border-radius: 10px;
+}
+
+main .container-form input{
+    width: 100%;
+    height: 25px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 2px;
+    font-size: 12px;
+}
+main .teladress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .teladress input{
+    width: 98%;
+    justify-content: center;
+}
+main .container-order, .container-type{
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+main .container-type {
+    border: 2px solid  #ec0202e1 ;
+    background-color: #ff000098 ;
+    color:  black;
+}
+main .container-order {
+    border: 2px solid  #3a3a3a79;
+    background-color: #3f3f3f79 ;
+    color:  black;
+    margin: 8px 0;
+}
+
+main .button-edit{
+    margin: 10px auto 10px;
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border : 2px solid #ff000073 ;
+    color:#ec0202e1 ;
+    position: relative;
+    border-radius:5px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  main .button-edit:before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    background:#ff000073 ;
+    transition: all 0.2s ease;
+  }
+  
+  main .button-edit:hover::before{
+    height: 100%;
+  }
+  main .radio-button{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin: 4px 0px
+}
+main .radio-button label{
+    font-size: 0.7rem;
+}
+main .radio-button input[type=radio]{
+    height: 11px;
+    width: 11px;
+    border-radius: 100%;
+    left: 15px;
+}
+
+main .delete{
+    text-align: right;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 20px;
+}
+main .delete a{
+    text-decoration: underline;
+    font-size: 13px;
+    color: white;
+}
+
+@media screen and (max-width: 786px){
+    
+    .container {
+        width: 85%;
+        flex-wrap: wrap;
+    }
+  }
+
+@media screen and (max-width: 480px){
+ 
+    .container {
+        width: 100%;
+    }
+  }

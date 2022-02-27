@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-color: #F1F1F1 ;
+    ;
+}
+main {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+    ;
+    background-image: url("/img/407.jpg");
+    background-size:contain;
+}
+main .login{
+    border: 1px solid black;
+    text-align: center;
+    min-height: 490px;
+    max-height: 650px;
+    width: 30vw;
+    min-width: 310px;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 6px 9px 15px -3px rgba(0,0,0,0.75);
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+    position: relative
+}
+main .title {
+    margin-top: 30px;
+}
+main .subtitle {
+    margin: 10px 0;
+    
+}
+main .username  {
+    margin-bottom: 20px;
+    
+}
+main .username input, .password input, .botonlogin button, .continuarg button{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2px
+}
+
+main .password p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+main .remember {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+main .botonlogin button{
+    background-color:  #e60202;
+    border-color: #e60202da;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    transition: all 450ms;
+}
+main .botonlogin button:hover{
+    background-color: #e60202a6;
+}
+main .botonlogin p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+main .backhome {
+    margin-top: 5px;
+}
+main .backhome i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+}
+
+
+main .continuarg button {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: cornsilk;
+    transition: all 500ms;
+}
+main .continuarg i{
+    position: absolute;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    
+}
+main .continuarg button:hover {
+    background-color: #9150f1;
+}
+
+/*Errors*/
+main .text-danger{
+    font-size : 12px;
+    color: rgb(199, 2, 2);
+    margin-bottom: 0px;
+}
+main .input-error-email, main .input-error-password{
+    font-size : 12px;
+    color: rgb(199, 2, 2);
+    margin-bottom: 0px;
+    display:none;
+}
+main .no-visible{
+    display:none
+}
+
+main .form-input{
+    position: relative;
+}
+
+main .input-error-active{
+    display:block;
+}
+main .state-validation{
+    position:absolute;
+    right:10px;
+    top: 7px;
+    z-index: 100;
+    opacity: 0;
+}
+main .form-message{
+    margin-top: 20%;
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    background:rgba(128, 128, 128, 0.6);
+    padding: 0 15px;
+    border-radius: 10px;
+    display: none;
+}
+main .form-message-active{
+    display: block
+}
+/*validations style*/
+main .form-input-correct .state-validation{
+    color:rgb(108, 155, 15);
+    opacity: 1;
+}
+main .form-input-incorrect .state-validation{
+    color:rgb(199, 2, 2);
+    opacity: 1;
+}
+main .form-input-incorrect input{
+    border: 2px solid rgb(199, 2, 2);
+}

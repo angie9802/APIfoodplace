@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+main {
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+    background-image: url("/img/407.jpg");
+    background-size:contain;
+}
+main .text-danger{
+    font-size : 11px;
+    color: rgb(199, 2, 2);
+  }
+main .is-invalid{
+    transition: all 450ms;
+}
+main .is-invalid:hover{
+    border: 2px solid rgb(199, 2, 2);
+}
+
+main .register{
+    border: 1px solid black;
+    text-align: center;
+    min-height: 480px;
+    max-height: 530px;
+    width: 25vw;
+    min-width: 370px;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 6px 9px 15px -3px rgba(0,0,0,0.75);
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+main .register input,.botonok button, .continuarg button{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 2px;
+}
+main .backhome {
+    margin-top: 5px;
+}
+main .backhome i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+}
+
+main input {
+    text-align: center;
+}
+main h1{
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+main .teladress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .teladress input{
+    width: 98%;
+    justify-content: center;
+}
+main .radio-button{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 7px 0;
+}
+main .radio-button input[type=radio]{
+    height: 11px;
+    width: 11px;
+    border-radius: 100%;
+    left: 15px;
+}
+
+main .botonok button{
+    background-color:  #e60202;
+    border-color: #e60202da;
+    margin-top: 15px;
+    cursor: pointer;
+    color: white;
+    transition: all 450ms;
+}
+main .botonok button:hover{
+    background-color:#e60202a6;
+}
+
+
+main .continuarg button {
+    cursor: pointer;
+    background-color: cornsilk;
+    transition: all 450ms;
+}
+
+main .continuarg button:hover {
+    background-color:rgba(13, 13, 226, 0.452) ;
+}
